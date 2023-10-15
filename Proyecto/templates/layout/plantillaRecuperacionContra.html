@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>IMAS App</title>
+        <meta charset="UTF-8">
+            <!-- Boodstrap -->
+            <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+            <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+            <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+            <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <!-- Creación Header -->
+        <header th:fragment="header" class="header">
+            <nav class="navbar navbar-dark" style="background-color: #15CDCB;">
+                <div class="container" style="align-content: center">
+                    <a  class="navbar-brand">[[#{aplicacion.recuperacion}]]</a>
+
+                </div>
+            </nav>
+        </header>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-secondary" onclick="location.href = '/menuAyudas'">Iniciar sesión</button>
+        </div>
+
+    </body>
+</html>
