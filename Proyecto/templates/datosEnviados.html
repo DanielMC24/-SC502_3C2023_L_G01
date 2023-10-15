@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>IMAS App</title>
+        <meta charset="UTF-8">
+            <!-- Boodstrap -->
+            <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+            <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+            <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+            <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body style="background-color: #212226; min-height: 100vh; display: flex; flex-direction: column">
+        <header th:replace="layout/plantillaConfirmacion :: header">
+
+        </header>
+        <br>
+        <div style="justify-content: space-evenly; padding-top: 10%; display: flex;">
+             
+            <div style="width: 18rem; "></div>
+             
+            <div class="card" style="width: 18rem; background-color: #15CDCB">
+                    <img class="card-img-top" src="https://us.123rf.com/450wm/deniex3/deniex32202/deniex3220200020/182566771-green-check-mark-3d-vector-icon-agreement-symbol-of-user-approval-positive-online-voting-and.jpg?ver=6"  height="270px" alt="Card image cap"/>
+                <div class="card-body">
+                  <p class="card-text" style="justify-content: space-evenly; display: flex; "><Strong>Datos enviados correctamente!</Strong></p>
+                  <a href="#" class="btn btn-primary"  style=" background-color: #3F54D1; justify-content: space-evenly; display: flex" onclick="onClickAceptar">Aceptar</a>
+                </div>
+              </div>
+             
+             <div style="width: 18rem; "></div>
+             
+        </div>
+
+    </body>
+ </html>
