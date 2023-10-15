@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantillaLogin :: head">
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <body style="background-color: #212226">
+                    <header th:replace="layout/plantillaInicioSesion :: header">
+
+                    </header>
+                    
+                    
+
+                    <div style="justify-content: center; display: flex" >
+
+                        <div style="justify-content: center; display: flex; padding-top: 15%;" class="btn-group-vertical">
+                            <br>
+                                <form>
+                                    <div class="form-group">
+                                        <label style="color: white">Correo electrónico</label>
+                                        <br>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label style="color: white">Password</label>
+                                        <br>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <a style="color: white"  href="/recuperacionContra" >Ha olvidado su contraseña?</a>
+                                        
+                                    </div>
+                                        <br>
+                                    
+                                </form>
+                                <button type="button" style="background-color: #15CDCB;" class="btn btn-primary btn-lg" onclick="location.href = '/menuAyudasUsuario'">Iniciar sesión</button>
+                                <br>
+                                    </div>
+                                    </div>
+
+                                    </body>
+                                    </html>
