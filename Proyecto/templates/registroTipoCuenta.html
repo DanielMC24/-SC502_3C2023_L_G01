@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="head">
+        <title>IMAS App</title>
+        <meta charset="UTF-8">
+            <!-- Boodstrap -->
+            <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+            <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+            <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+            <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+            <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    </head>
+    <body style="background-color: #212226">
+        <header th:replace="layout/plantillaLogin :: header">
+
+        </header>
+        <div style="justify-content: left; padding-left: 4%; padding-top: 2%; display: flex;" >
+            <button type="button" style="background-color: #15CDCB;" class="btn btn-primary btn-lg" onclick="location.href = '/IMAS'" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+            </button>
+         </div>
+        <div style="justify-content: center; display: flex" >
+            <div style="justify-content: center; display: flex; padding-top: 15%; " class="btn-group-vertical" >
+                <label style="color: white">Tipo de cuenta que desea crear:</label>
+                <br>
+                <button type="button" style="background-color: #15CDCB;" class="btn btn-secondary btn-lg btn-block" onclick="location.href = '/registroInstitucion'">Institucional</button>
+                <br>
+                <button type="button" style="background-color: #4FE0B5;" class="btn btn-secondary btn-lg btn-block" onclick="location.href = '/registroUsuario'">Personal</button>
+            </div>
+        </div>
+    </body>
+ </html>

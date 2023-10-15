@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantillaRegistroUsuario :: head">
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                </head>
+                <body style="background-color: #212226">
+                    <header th:replace="layout/plantillaRegistroUsuario :: header">
+
+                    </header>
+                    
+                    
+
+                    <div style="justify-content: center; display: flex" >
+
+                        <div style="justify-content: center; display: flex; padding-top: 7%;" class="btn-group-vertical">
+                            <br>
+                                <form th:action="@{/registroUsuario/guardar}" th:object="${usuario}" method="POST" class="was-validated"
+                              enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" style="color: white">Nombre completo</label>
+                                        <input name="nombre" type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" style="color: white">Identificación</label>
+                                        <input name="cedula" type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" style="color: white">Edad</label>
+                                        <input name="edad" type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+                                    <br>   
+                                    <div class="form-group">
+                                        <label style="color: white">Correo electrónico</label>
+                                        <br>
+                                        <input name="correo_electronico" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label style="color: white">Password</label>
+                                        <br>
+                                        <input name="contrasena" type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" style="color: white">Ocupación</label>
+                                        <input name="sector"type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="formGroupExampleInput" style="color: white">Lugar de residencia</label>
+                                        <input name="ubicacion" type="text" class="form-control" id="formGroupExampleInput">
+                                    </div>
+   
+                                    <br>
+                                    <br>  
+                                        <button typ= "submit" style="background-color: #15CDCB;" class="btn btn-primary btn-lg " >Registrarse</button>
+                                <br>
+                                </form>
+                                
+                                    </div>
+                                    </div>
+
+                                    </body>
+                                    </html>
