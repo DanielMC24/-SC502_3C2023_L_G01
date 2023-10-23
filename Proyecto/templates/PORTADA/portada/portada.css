@@ -1,0 +1,238 @@
+
+/*Navbar*/
+/* Cambia el color de fondo del navbar */
+.navbar {
+  background-color: #172a36; /* Cambia el color de fondo a tu elección */
+}
+
+/* Cambia el color del texto de los enlaces del navbar */
+.navbar .navbar-nav .nav-link {
+  color: #48b5da; /* Cambia el color del texto a tu elección */
+}
+
+/* Cambia el color del texto de los enlaces del navbar al pasar el mouse por encima */
+.navbar .navbar-nav .nav-link:hover {
+  color: #ffdd00; /* Cambia el color del texto al pasar el mouse a tu elección */
+}
+
+
+
+
+/* redes*/
+
+.share {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    transition: .4s ease-in-out;
+    margin-top: 60px;
+  }
+  
+  .btn1 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn1 .instagram {
+    margin-top: 0.1em;
+    fill: #cc39a4;
+  }
+  
+  .btn1 .tooltiptext1 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn1 .tooltiptext1 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn1 .tooltiptext1 .account {
+    margin-top: 1em;
+  }
+  
+  .btn1 .tooltiptext1 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn1:hover .tooltiptext1 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn1:hover {
+    background-color: #cc39a4;
+  }
+  
+  .btn1:hover .instagram {
+    fill: white;
+  }
+  
+  .btn2 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn2 .twitter {
+    margin-top: .25em;
+    margin-left: .1em;
+    fill: #03A9F4;
+  }
+  
+  .btn2 .tooltiptext2 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn2 .tooltiptext2 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn2 .tooltiptext2 .account {
+    margin-top: 1em;
+  }
+  
+  .btn2 .tooltiptext2 .username {
+    font-size: 0.6em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn2:hover .tooltiptext2 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn2:hover {
+    background-color: #03A9F4;
+  }
+  
+  .btn2:hover .twitter {
+    fill: white;
+  }
+  
+  .btn3 {
+    position: relative;
+    width: 3em;
+    height: 3em;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    transition: .4s all;
+  }
+  
+  .btn3 .tooltiptext3 {
+    visibility: hidden;
+    width: 6em;
+    height: 8em;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1em;
+    position: absolute;
+    left: -1.5em;
+    top: -8em;
+    z-index: 1;
+    transition: .1s ease-in-out;
+  }
+  
+  .btn3 .tooltiptext3 .card {
+    width: 4em;
+    height: 4em;
+    background-color: white;
+  }
+  
+  .btn3 .tooltiptext3 .account {
+    margin-top: 1em;
+  }
+  
+  .btn3 .tooltiptext3 .username {
+    font-size: 0.7em;
+    margin-top: 1.6em;
+    font-weight: bold;
+  }
+  
+  .btn3:hover .tooltiptext3 {
+    transform: translateY(-1em);
+    visibility: visible;
+  }
+  
+  .btn3:hover {
+    background-color: black;
+  }
+  
+  .btn3:hover .git {
+    fill: white;
+  }
+  
+  /*Sesion del video*/
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir el contenedor */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Coloca el contenido en la parte superior del video */
+    color: #fff; /* Cambia el color del texto para que sea visible en el video */
+    padding: 20px;
+}
