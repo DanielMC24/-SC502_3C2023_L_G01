@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <title>IMAS App</title>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <style>
+        /* Ajustar el tamano del chart */
+        #chartContainer {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header th:fragment="header" class="header">
+        <nav class="navbar navbar-dark" style="background-color: #3F54D1;">
+            <div class="container" style="justify-content: space-evenly; display: flex;">
+                <a  class="navbar-brand"><Strong>[[#{aplicacion.reportes}]]</Strong></a>
+
+            </div>
+        </nav>
+    </header>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-secondary" onclick="location.href = '/menuAyudas'">Iniciar sesión</button>
+    </div>
+    <!--<div class="container">
+        <div class="card">
+            <div class="card-header">
+                Reporte Grafico
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Seccion 1</h5>
+                <p class="card-text">Se puede agregar info aqui</p>
+            </div>
+        </div> 
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                    <th>Columna 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dato 1</td>
+                    <td>Dato 2</td>
+                    <td>Dato 3</td>
+                </tr> -->
+    <!-- se puede anadir mas datos -->
+    <!--</tbody>
+    </table>-->
+
+    <!-- Se utiliza el chartCointainer para aplicar el tamano al chart -->
+    <div id="chartContainer">
+        <canvas id="labelChart"></canvas><!-- Se utiliza este tipo de pie chart -->
+    </div>
+    </div>
+
+    <script> /* Aqui podemos editar toda la info del chart, y ajustar colores, etc */
+        var data = {
+            labels: ["Data 1", "Data 2", "Data 3"],
+            datasets: [
+                {
+                    data: [30, 40, 30],
+                    backgroundColor: ["#4fe0b5", "#17cecc", "#5280e2"],
+                },
+            ],
+        };
+
+        var ctx = document.getElementById("labelChart").getContext("2d");
+
+        var myPieChart = new Chart(ctx, {
+            type: "pie",
+            data: data,
+        });
+    </script>
+</body>
+
+</html>
