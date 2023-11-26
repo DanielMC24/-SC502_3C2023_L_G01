@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #172a36;
+}
+
+form {
+    box-shadow: 2px 6px 100px #0dcaf0;
+}
