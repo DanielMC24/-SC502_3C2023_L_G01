@@ -47,7 +47,6 @@
           
           </ul>
         </li>
-        <li><a href="#">Cursos</a></li>
         <li class="has-submenu"><a href="#"> Iniciar session </a>
           <ul class="sub-menu">
             <li><a href="#">Iniciar Sesion</a></li>
@@ -114,7 +113,7 @@
                       <img src="" alt="">
                     </div>
                     <div class="col-md-6">
-                     <p>Pagina dedicada a ayuda social para la poblacion de escasos recurs</p>
+                     <p>Pagina dedicada a ayuda social para la poblacion de escasos recursos</p>
                     </div>
                   </div>
                 </article>
